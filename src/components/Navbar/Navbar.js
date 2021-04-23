@@ -1,5 +1,7 @@
 import React from "react";
 import logo from "../../logo.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg">
@@ -17,12 +19,20 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <FontAwesomeIcon
+              icon={faBars}
+              color="#fff"
+              className="navbar-toggler-icon"
+            />
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#about">
+                <a
+                  className="nav-link active"
+                  aria-current="page"
+                  href="#about"
+                >
                   About
                 </a>
               </li>
