@@ -8,6 +8,7 @@
 }
 * {
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 .navbar {
@@ -74,8 +75,6 @@
 .heading{
   font-size: 3.125rem;
   text-align: center;
-  text-decoration: underline;
-  font-weight: bold;
 }
 .padding{
   padding-top: 6.25rem;
@@ -105,4 +104,7 @@
 .social-media{
   display: flex;
   justify-content: flex-end;
+}
+.icon{
+  margin-left: 0.75rem;
 }
