@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div className="form-container">
+    <div className="container w-50">
       <form>
         <div class="mb-3">
           <input type="text" class="form-control" id="name" placeholder="Name"/>
@@ -15,9 +15,6 @@ const ContactForm = () => {
             aria-describedby="emailHelp"
             placeholder="Email"
           />
-          <div id="emailHelp" class="form-text">
-            We'll never share your email with anyone else.
-          </div>
         </div>
         <div class="mb-3">
           <textarea
@@ -26,7 +23,7 @@ const ContactForm = () => {
             placeholder="Write your Message..."
           ></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">
+        <button type="submit" class="btn submit-btn float-right">
           Submit
         </button>
       </form>

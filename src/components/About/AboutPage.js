@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="container padding">
+    <div className="container padding" id="about">
       <div className="container-fluid">
         <p className="heading">About</p>
         <p className="about-welcome">Hello,</p>

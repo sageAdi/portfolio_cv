@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="navbar navbar-expand-lg fixed-top">
       <div className="container">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#logo">
+          <a className="navbar-brand" href="#header">
             <img src={logo} alt="logo" />
           </a>
           <button

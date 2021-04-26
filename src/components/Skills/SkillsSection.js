@@ -10,10 +10,16 @@ import { easeQuadInOut } from "d3-ease";
 const SkillsSection = ({ value, img, name }) => {
   return (
     <div className="outer-circle">
-      <AnimatedProgressProvider
+      <div className="skill-container">
+        <img src={img} alt="html5" className="skill-img" />
+        <div>
+          <strong>{name}</strong>
+        </div>
+      </div>
+      {/* <AnimatedProgressProvider
         valueStart={0}
         valueEnd={value}
-        duration={0.6}
+        duration={1.5}
         easingFunction={easeQuadInOut}
       >
         {(val) => {
@@ -24,6 +30,7 @@ const SkillsSection = ({ value, img, name }) => {
               styles={buildStyles({
                 // Text size
                 textSize: "16px",
+                strokeLinecap: "butt",
                 // How long animation takes to go from one percentage to another, in seconds
                 // pathTransitionDuration: 1,
                 // Can specify path transition in more detail, or remove it entirely
@@ -36,14 +43,16 @@ const SkillsSection = ({ value, img, name }) => {
                 backgroundColor: "#c7f0bd",
               })}
             >
-              <img src={img} alt="html5" />
-              <div>
-                <strong>{name}</strong>
+              <div className="skill-container">
+                <img src={img} alt="html5" className="skill-img" />
+                <div>
+                  <strong>{name}</strong>
+                </div>
               </div>
             </CircularProgressbarWithChildren>
           );
         }}
-      </AnimatedProgressProvider>
+      </AnimatedProgressProvider> */}
     </div>
   );
 };
