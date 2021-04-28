@@ -8,15 +8,17 @@ import Skills from "./components/Skills/SkillsPage";
 import ProjectPage from "./components/Projects/ProjectPage";
 import ContactPage from "./components/Contact/ContactPage";
 import FooterPage from "./components/Footer/FooterPage";
+import ServicePage from "./components/Services/ServicePage";
 
 function App() {
   return (
     <>
-      <ReactParticle />
+      {/* <ReactParticle /> */}
       <Navbar />
       <Header />
+      <ServicePage />
       <About />
-      <Skills />
+      {/* <Skills /> */}
       <ProjectPage />
       <ContactPage />
       <FooterPage />

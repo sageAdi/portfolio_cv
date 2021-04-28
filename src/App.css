@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
 :root {
-  --dark-color: #141414;
-  --white: #fff;
+  --dark-color: #272343;
+  --primary-white: #fff;
+  --secondary-white: #e3f6f5;
+  --secondary-blue: #bae8e8;
   --light-green: #c7f0bd;
   --light-blue: #65AFFF;
 }
@@ -13,9 +15,68 @@
   margin: 0;
   padding: 0;
 }
+.para{
+  font-size: 1.125rem;
+  line-height: 27px;
+}
+.heading1{
+  font-size: 3.052rem;
+  line-height: 66px;
+}
+.heading2{
+  font-size: 2.441rem;
+  line-height: 52.8px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.heading3{
+  font-size: 1.953rem;
+  line-height: 46.9px;
+}
+.heading4{
+  font-size: 1.563rem;
+  line-height: 33.6px;
+}
+.heading5{
+  font-size: 1.25rem;
+  line-height: 27.6px;
+}
+@media screen and (max-width: 769px) {
+  .heading1{
+    font-size: 1.953rem;
+    line-height: 37.5px;
+  }
+  .heading2{
+    font-size: 1.563rem;
+    line-height: 30px;
+    font-weight: bold;
+  }
+  .heading4{
+    font-size: 1.25rem;
+    line-height: 24px;
+  }
+  .work-text{
+    font-size: 1.25rem !important;
+  }
+  .para{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .heading1{
+    font-size: 1.563rem;
+    line-height: 30px;
+    justify-content: center;
+  }
+  .profile-img{
+    padding-top: 1rem;
+  }
+}
 /*********************************************** NAVBAR ***********************************************/
 .navbar {
   background-color: var(--dark-color);
+  z-index: 3;
 }
 .navbar-brand {
   padding: 0;
@@ -32,31 +93,33 @@
 .navbar-nav > li > a:focus {
   border-bottom: 2px solid var(--light-green);
 }
+.logo{
+  width: 5rem;
+}
 /*********************************************** Header ***********************************************/
 .header {
-  height: 90vh;
+  height: 100vh;
   background-color: var(--dark-color);
+  margin-bottom: 3.75rem;
 }
 .welcome-text, .header-name{
-  margin-bottom: 3.25rem;
+  margin-bottom: 3rem;
   /* font-weight: 400; */
 }
 .welcome-text {
-  font-size: 2.25rem;
+  font-size: 3.052rem;
+  line-height: 66px;
 }
-.header-name {
-  font-size: 3rem;
-  font-weight: bold;
-  line-height: 3.75rem;
-  font-family: 'Montserrat', sans-serif;
+.blue-color {
+  color: var(--light-blue);
 }
 .work-text{
   font-size: 1.5rem;
   margin-bottom: 0px;
 }
 .cv-btn{
-  background: var(--light-blue) !important;
-  width: 100%;
+  background: var(--light-green) !important;
+  width: 15rem;
 }
 .react-particle{
   position: absolute;
@@ -67,9 +130,18 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  z-index: 2;
+  border-radius: 50%;
 }
 .profile-img{
   width: 18.75rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+@media screen and (max-width: 769px) {
+  .profile-img{
+    width: 13rem;
+  }
 }
 @media screen and (max-width: 426px) {
   .welcome-text, .header-name{
@@ -89,23 +161,38 @@
     margin-bottom: 0px;
   }
   .profile-img{
-    width: 6.25rem;
+    width: 8rem;
+    margin: auto;
   }
 }
-/*********************************************** About ***********************************************/
-.heading{
-  font-size: 2.5rem;
+/*********************************************** Service ***********************************************/
+.service-card{
+  width: 18rem;
+  border: none !important;
+  margin: 1rem;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 1.563rem;
+}
+@media screen and (max-width: 769px) {
+  .service-card{
+    font-size: 1.25rem;
+  }
+}
+.service-card-img{
+  width: 18rem;
+  height: 10rem;
+}
+/*********************************************** About ***********************************************/
+.about{
+  background-color: var(--secondary-white);
 }
 .padding{
-  padding-top: 6.25rem;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
 }
-.about-welcome{
-  font-size: 1.875rem;
-}
-.about-text{
-  font-size: 1.313rem;
+.progress{
+  height: 20px !important; 
+  margin-top: 1rem;
 }
 /*********************************************** Skill ***********************************************/
 .outer-circle{
@@ -135,7 +222,7 @@
 /*********************************************** Project ***********************************************/
 .project-card{
   width: 20rem;
-  height: 13rem;
+  height: 12rem;
   margin: 1rem;
   border: 1px solid var(--dark-color) !important;
   box-shadow: 8px 8px 25px 1px var(--dark-color);
@@ -143,7 +230,11 @@
 }
 .card-img-top{
   width: 18rem;
-  height: 10rem;
+  height: 11.8rem;
+  font-size: 16px;
+}
+.blue-color{
+  color: var(--light-blue);
 }
 .overlay {
   position: absolute;
@@ -170,6 +261,9 @@
   box-shadow: 8px 8px 8px 2px var(--light-green);
 }
 /*********************************************** Contact ***********************************************/
+.contact{
+  background-color: var(--secondary-white);
+}
 .form-container{
   width: 100%;
   display: flex;
@@ -184,7 +278,6 @@
   background-color: var(--dark-color);
   color: white;
   height: 6.25rem;
-  margin-top: 6.25rem;
   padding: 1rem;
 }
 .footer-container{
@@ -201,13 +294,16 @@
 }
 .icon{
   margin-left: 0.75rem;
+  text-decoration: none;
+  color: var(--primary-white);
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .footer{
     font-size: 1rem;
   }
   .footer-container{
-    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
   .social-media{
     justify-content: center;

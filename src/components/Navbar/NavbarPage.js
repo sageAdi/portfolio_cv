@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="container">
         <div className="container-fluid">
           <a className="navbar-brand" href="#header">
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" className="logo" />
           </a>
           <button
             className="navbar-toggler"
@@ -31,19 +31,24 @@ const Navbar = () => {
                 <a
                   className="nav-link active"
                   aria-current="page"
-                  href="#about"
+                  href="#header"
                 >
+                  Home
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#services">
+                  Services
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#about">
                   About
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#skills">
-                  Skills
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#project">
-                  Project
+                <a className="nav-link" href="#works">
+                  Works
                 </a>
               </li>
               <li className="nav-item">
