@@ -16,7 +16,7 @@ const About = () => {
               with every project I work on, I give my full determination in
               making it best amongst all.
             </div>
-            <div className="col-md-6 align-self-end">
+            <div className="col-md-6">
               <Skills name="HTML" value={90} />
               <Skills name="CSS" value={85} />
               <Skills name="JavaScript" value={80} />

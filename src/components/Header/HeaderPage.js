@@ -13,7 +13,11 @@ const Header = () => {
               develop awesome websites.
             </p>
             <Typed
-              strings={["Frontend Developer", "Backend Developer", "Responsive Designer"]}
+              strings={[
+                "Frontend Developer",
+                "Backend Developer",
+                "Responsive Designer",
+              ]}
               typeSpeed={60}
               backSpeed={40}
               loop
