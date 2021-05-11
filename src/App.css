@@ -88,11 +88,12 @@
 }
 .navbar-nav > li > a {
   color: var(--white);
-  border-bottom: 3px solid var(--dark-color);
+  /* border-bottom: 3px solid var(--dark-color); */
 }
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus {
-  border-bottom: 3px solid var(--light-green);
+  /* border-bottom: 3px solid var(--light-green); */
+  color: var(--light-blue);
 }
 .logo{
   width: 5rem;
@@ -102,6 +103,8 @@
   height: 100vh;
   background-color: var(--dark-color);
   margin-bottom: 3.75rem;
+  display: flex;
+  align-items: center;
 }
 .welcome-text {
   font-size: 3.052rem;
@@ -109,6 +112,9 @@
 }
 .blue-color {
   color: var(--light-blue);
+}
+.green-color {
+  color: var(--light-green);
 }
 .work-text{
   font-size: 1.5rem;
@@ -139,6 +145,9 @@
   } */
 }
 @media screen and (max-width: 426px) {
+  #header .row{
+    flex-direction: column-reverse;
+  }
   .welcome-text, .header-name{
     margin-bottom: 3.25rem;
     /* font-weight: 400; */
@@ -158,6 +167,11 @@
   .profile-img{
     /* width: 8rem; */
     margin: auto;
+    margin-top: -20px;
+  }
+  .header-text-container{
+    margin-top: 1rem;
+    text-align: center;
   }
 }
 /*********************************************** Service ***********************************************/

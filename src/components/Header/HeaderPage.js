@@ -5,12 +5,12 @@ import resume from "../../Resume.pdf";
 const Header = () => {
   return (
     <div className="header" id="header">
-      <div className="container h-100">
-        <div className="container-fluid row h-100 align-content-center">
-          <div className="col-sm-12 col-md-6 text-white align-self-center">
+      <div className="container">
+        <div className="container-fluid row align-content-center">
+          <div className="col-sm-12 col-md-6 text-white align-self-center header-text-container">
             <p className="heading1">
-              Hi there!, I’m <span className="blue-color">Aditya</span>. <br />I
-              develop awesome websites.
+              Hi, I’m <span className="blue-color">Aditya</span>. <br />I
+              develop <span className="green-color">awesome</span> websites.
             </p>
             <Typed
               strings={[

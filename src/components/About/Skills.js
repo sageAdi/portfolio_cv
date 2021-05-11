@@ -3,9 +3,9 @@ import React from "react";
 const Skills = ({ name ,value}) => {
   return (
     <div>
-      <div class="progress">
+      <div className="progress">
         <div
-          class="progress-bar"
+          className="progress-bar"
           role="progressbar"
           style={{ width: `${value}%` }}
           aria-valuenow="25"
