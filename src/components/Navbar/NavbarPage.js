@@ -3,7 +3,6 @@ import logo from "../../logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Wrapper } from "../../Style";
-import styled from "styled-components";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
