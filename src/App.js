@@ -1,5 +1,5 @@
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 import Navbar from "./components/Navbar/NavbarPage";
 import Header from "./components/Header/HeaderPage";
 // import ReactParticle from "./components/React Particle/ReactParticle";

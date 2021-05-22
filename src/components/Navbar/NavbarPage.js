@@ -2,10 +2,12 @@ import React from "react";
 import logo from "../../logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Wrapper } from "../../Style";
+import styled from "styled-components";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
-      <div className="container">
+      <Wrapper className="container">
         <div className="container-fluid">
           <a className="navbar-brand" href="#header">
             <img src={logo} alt="logo" className="logo" />
@@ -59,7 +61,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </Wrapper>
     </nav>
   );
 };

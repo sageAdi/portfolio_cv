@@ -2,6 +2,8 @@ import React from "react";
 import Typed from "react-typed";
 import profile from "../../profile.png";
 import resume from "../../Resume.pdf";
+import styled from "styled-components";
+
 const Header = () => {
   return (
     <div className="header" id="header">
@@ -25,7 +27,7 @@ const Header = () => {
             />
             <br />
             <a href={resume} download className="btn cv-btn">
-              GET CV
+              Download CV
             </a>
           </div>
           <div className="col-sm-12 col-md-6 profile-container p-0">
@@ -40,5 +42,9 @@ const Header = () => {
     </div>
   );
 };
+
+const BlueText = styled.span`
+  
+`
 
 export default Header;

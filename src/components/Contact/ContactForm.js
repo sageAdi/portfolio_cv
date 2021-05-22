@@ -29,6 +29,7 @@ const ContactForm = () => {
             id="comment"
             placeholder="Write your Message..."
             name="message"
+            style={{ height: "100px" }}
           ></textarea>
         </div>
         <button type="submit" className="btn submit-btn col-sm-12 col-md-3">
