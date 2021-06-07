@@ -34,6 +34,7 @@ const ProjectCard = styled.div`
   width: 100%;
   height: 22rem;
   margin: 1rem;
+  padding: 1rem;
   /* border: 1px solid rgba(101, 175, 255, 0.2) !important; */
   /* background: rgba(255, 255, 255, 0.25) !important; */
   /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
@@ -49,36 +50,52 @@ const ProjectCard = styled.div`
   transform-style: preserve-3d;
   transform: perspective(1000px);
   @media screen and (max-width: 426px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    justify-content: center;
   }
 `;
 const ProjectImage = styled.div`
   transform: translateZ(40px);
-  width: 50%;
+  width: 100%;
   img {
     width: 100%;
+    max-width: 100%;
     margin-right: 1rem;
     border-radius: 10px;
     /* border-radius: ${({ value }) =>
       value % 2 === 0 ? "0 10px 10px 0" : "10px 0 0 10px"}; */
   }
   border-radius: 10px !important;
+  @media screen and (max-width: 426px) {
+    width: 100%;
+  }
 `;
 const ProjectBody = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   border-radius: ${({ value }) =>
     value % 2 === 0 ? "10px 0 0 10px" : "0 10px 10px 0"};
   color: #000;
-  overflow: hidden;
-  width: 30%;
-  height: 100%;
+  width: 100%;
   transition: 1s ease;
+  p{
+    max-width: 50%;
+  }
+  @media screen and (max-width: 426px) {
+    width: 100%;
+    margin-top: 1rem;
+    p{
+    max-width: 100%;
+  }
+  }
 `;
 const ProjectLink = styled.a`
   /* padding: 16px 32px !important; */
   text-decoration: none;
+  text-align: center;
+  padding: 8px 16px;
   border-radius: 15px;
   width: 160px;
   background-image: linear-gradient(135deg, #c7f0bd -20%, #c7f0bd 120%);

@@ -11,7 +11,7 @@ const About = () => {
 
     const onScroll = () => {
       const scrollPos = window.scrollY + window.innerHeight;
-      if (div1Pos < scrollPos - 500) {
+      if (div1Pos < scrollPos - 100) {
         console.log("useEffect on the screen " + show);
         setShow(true);
       }
