@@ -1,0 +1,36 @@
+#right-arrow {
+  animation: right 3s linear infinite;
+}
+
+@keyframes right {
+  from {
+    transform: translateX(-25px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+#left-arrow {
+  animation: left 3s linear infinite;
+}
+@keyframes left {
+  from {
+    transform: translateX(25px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+#dot {
+  animation: scale 3s linear infinite;
+  transform-origin: center;
+}
+@keyframes scale {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}

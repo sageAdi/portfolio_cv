@@ -1,0 +1,15 @@
+.contact {
+    background-color: rgba(199, 240, 189, 0.5);
+  }
+  .form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .form-control{
+    border-radius: 15px;
+  }
+  .submit-btn {
+    background: var(--light-blue) !important;
+    color: #000;
+  }

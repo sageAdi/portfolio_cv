@@ -5,6 +5,7 @@ import css3 from "./resources/CSS3.svg";
 import git from "./resources/git.svg";
 import react from "./resources/React.svg";
 import js from "./resources/JS.svg";
+import "./skill.css"
 
 const Skills = () => {
   return (

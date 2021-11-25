@@ -1,0 +1,39 @@
+#profile {
+  animation: up 4s linear;
+}
+@keyframes up {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#left-arm,
+#leaveUp,
+#leaveDown {
+  animation: shake 3s infinite linear 1s;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(8deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-8deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+#Vector_8 {
+  display: none;
+}

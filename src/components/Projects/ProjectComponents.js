@@ -6,7 +6,7 @@ const ProjectComponents = ({ title, description, link, img, position }) => {
   const tilt = useRef(null);
   const options = useMemo(() => ({
     speed: 100,
-    max: 10,
+    max: 5,
     glare: false,
     perspective: 1000,
   }));
@@ -14,27 +14,25 @@ const ProjectComponents = ({ title, description, link, img, position }) => {
     VanillaTilt.init(tilt.current, options);
   }, [options]);
 
+
   return (
-    <ProjectCard value={position}>
-      <ProjectBody value={position}>
-        <h5 className="card-title heading5">{title}</h5>
-        <p className="para">{description}</p>
-        <ProjectLink href={link}>
-          Github Repo
-        </ProjectLink>
-      </ProjectBody>
-      <ProjectImage value={position}>
+    <ProjectCard value={position} className="card">
+      <ProjectImage value={position} className="col-md-6" ref={tilt}>
         <img src={img} alt="project" />
       </ProjectImage>
+      <ProjectBody value={position} className="col-md-6">
+        <h5 className="card-title heading5">{title}</h5>
+        <p className="para">{description}</p>
+        <ProjectLink href={link}>Github Repo</ProjectLink>
+      </ProjectBody>
     </ProjectCard>
   );
 };
 const ProjectCard = styled.div`
   display: flex;
-  width: 100%;
-  height: 22rem;
-  margin: 1rem;
-  padding: 1rem;
+  /* max-width: 700px; */
+  margin-bottom: 1rem;
+  padding: 1rem 0rem;
   /* border: 1px solid rgba(101, 175, 255, 0.2) !important; */
   /* background: rgba(255, 255, 255, 0.25) !important; */
   /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
@@ -45,18 +43,22 @@ const ProjectCard = styled.div`
     4px 4px 7px 0 rgba(0, 0, 0, 0.2), 6px 6px 36px 0 rgba(0, 0, 0, 0.1); */
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   flex-direction: ${({ value }) => (value % 2 === 0 ? "row-reverse" : "row")};
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  transform-style: preserve-3d;
-  transform: perspective(1000px);
+  overflow: hidden;
+  border-radius: 10px;
   @media screen and (max-width: 426px) {
     flex-direction: column-reverse;
     justify-content: center;
   }
 `;
 const ProjectImage = styled.div`
-  transform: translateZ(40px);
+  transform: translateZ(4px);
+
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
   width: 100%;
+  overflow: hidden;
   img {
     width: 100%;
     max-width: 100%;
@@ -80,15 +82,14 @@ const ProjectBody = styled.div`
   color: #000;
   width: 100%;
   transition: 1s ease;
-  p{
-    max-width: 50%;
+  text-align: center;
+  p {
+    color: rgba(0, 0, 0, 0.7);
   }
   @media screen and (max-width: 426px) {
     width: 100%;
     margin-top: 1rem;
-    p{
-    max-width: 100%;
-  }
+    width: 100%;
   }
 `;
 const ProjectLink = styled.a`
@@ -98,6 +99,7 @@ const ProjectLink = styled.a`
   padding: 8px 16px;
   border-radius: 15px;
   width: 160px;
+  margin-bottom: 0.5rem;
   background-image: linear-gradient(135deg, #c7f0bd -20%, #c7f0bd 120%);
   /* box-shadow: 0 11px 36px 0 rgb(70 89 138 / 25%); */
   color: #000;

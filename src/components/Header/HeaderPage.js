@@ -3,13 +3,15 @@ import Typed from "react-typed";
 import profile from "../../profile.png";
 import resume from "../../Resume.pdf";
 import styled from "styled-components";
+import Profile from "../../asset/profile/Profile";
+import "./header.css";
 
 const Header = () => {
   return (
     <div className="header" id="header">
       <div className="container">
         <div className="container-fluid row align-content-center">
-          <div className="col-sm-12 col-md-6 text-white align-self-center header-text-container">
+          <div className="col-sm-12 col-md-6 align-self-center header-text-container">
             <p className="heading1">
               Hi, I’m <span className="blue-color">Aditya</span>. <br />I
               develop <span className="green-color">awesome</span> websites.
@@ -31,11 +33,12 @@ const Header = () => {
             </a>
           </div>
           <div className="col-sm-12 col-md-6 profile-container p-0">
-            <img
+            {/* <img
               src={profile}
               alt="profile"
               className="profile-img img-fluid float-end"
-            />
+            /> */}
+            <Profile />
           </div>
         </div>
       </div>
@@ -43,8 +46,6 @@ const Header = () => {
   );
 };
 
-const BlueText = styled.span`
-  
-`
+const BlueText = styled.span``;
 
 export default Header;

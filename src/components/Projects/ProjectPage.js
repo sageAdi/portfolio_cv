@@ -2,6 +2,10 @@ import React from "react";
 import ProjectComponents from "./ProjectComponents";
 import complaint from "./resources/complaint.svg";
 import resume from "./resources/resume.svg";
+import Project from "../Progress/Progress";
+import Complaint from "./resources/Compaint.js";
+import Resume from "./resources/Resume";
+import "./project.css";
 
 const ProjectPage = () => {
   return (
@@ -10,6 +14,12 @@ const ProjectPage = () => {
         <div className="container-fluid">
           <p className="heading2">A selection of my work</p>
           <div className="row justify-content-center">
+            {/* <Project
+              Svg={Complaint}
+              title="Complaint Management"
+              description="An Android Application developed for managing the complaints in the college, registering new users with their enrollment number."
+              link="https://github.com/sageAdi/CollageComplaintsRegister"
+            /> */}
             <ProjectComponents
               title="Complaint Management"
               description="An Android Application developed for managing the complaints in the college, registering new users with their enrollment number."

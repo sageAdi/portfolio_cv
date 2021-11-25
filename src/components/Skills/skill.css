@@ -1,0 +1,24 @@
+.outer-circle {
+    width: 12rem;
+    height: 12rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1rem solid var(--light-blue);
+    background-color: var(--light-green);
+  }
+  .skill-img {
+    margin-top: 5px;
+    width: 4.25 rem;
+  }
+  .skill-container {
+    transition: transform 0.4s;
+    text-align: center;
+    width: 100%;
+  }
+  .outer-circle:hover .skill-container {
+    transform: scale(1.2);
+    transform-origin: 50% 50%;
+  }

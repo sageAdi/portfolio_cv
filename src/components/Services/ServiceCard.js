@@ -1,11 +1,13 @@
 import React from "react";
 
-const ServiceCard = ({ name, img }) => {
+const ServiceCard = ({ service, Icon }) => {
   return (
     <div className="card service-card">
-      <img src={img} className="card-img-top service-card-img" alt={name} />
-      <div className="card-body">
-        <p className="card-text">{name}</p>
+      <div className="icon-head">
+        <Icon />
+      </div>
+      <div className="card-body icon-body">
+        <p className="heading4">{service}</p>
       </div>
     </div>
   );

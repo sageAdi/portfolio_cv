@@ -6,6 +6,7 @@ import {
   faGithub,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import "./footer.css"
 
 const FooterPage = () => {
   return (

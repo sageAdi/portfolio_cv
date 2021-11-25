@@ -10,20 +10,13 @@ const Skills = ({ name, value }) => {
     <div className="progress-wrapper">
       <span>{name}</span>
       <div className="progress">
-        <OverlayTrigger
-          key="top"
-          placement="top-end"
-          overlay={<Tooltip>{newValue}</Tooltip>}
-          show="true"
-        >
-          <div
-            className="progress-bar"
-            style={{ width: `${newValue}%` }}
-            aria-valuenow={newValue}
-            aria-valuemin="0"
-            aria-valuemax="100"
-          ></div>
-        </OverlayTrigger>
+        <div
+          className="progress-bar"
+          style={{ width: `${newValue}%` }}
+          aria-valuenow={newValue}
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
       </div>
     </div>
   );

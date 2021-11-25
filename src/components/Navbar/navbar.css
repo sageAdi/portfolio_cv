@@ -1,0 +1,32 @@
+.navbar {
+  background-color: var(--dark-color);
+  background: rgba(39, 35, 67, 0.75);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 0 0 15px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 3;
+}
+.active{
+  color: var(--light-blue) !important;
+}
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+.navbar-nav li {
+  margin-left: 0.75rem;
+}
+.navbar-nav > li > a {
+  color: var(--white);
+  /* border-bottom: 3px solid var(--dark-color); */
+}
+.navbar-nav > li > a:hover,
+.navbar-nav > li.active > a:focus {
+  /* border-bottom: 3px solid var(--light-green); */
+  color: var(--light-blue);
+}
+.logo {
+  width: 5rem;
+}
